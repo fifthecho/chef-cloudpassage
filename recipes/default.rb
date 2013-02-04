@@ -45,8 +45,6 @@ end
 case node[:platform]
 	when "debian", "ubuntu"
 		command = "sudo apt-get update"
-	when "redhat", "centos", "fedora"
-		command = "sudo yum update --assumeyes"
 end
 
 execute "cloudpassage-update-repositories" do
